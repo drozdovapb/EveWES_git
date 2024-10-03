@@ -33,7 +33,8 @@ mytheme <- function(){
   list(theme_bw(base_size = 12), 
        theme(line = element_line(size = .5, color = "lightgrey"), 
              panel.grid.major.y = element_blank(),
-             legend.position = 'NA'),
+             legend.position = 'NA', 
+             strip.text = element_text(size=14)),
        scale_fill_manual(values = fillcolors),
        scale_color_manual(values = colcolors),
        scale_y_continuous(breaks = pretty_breaks()),
@@ -48,8 +49,14 @@ figwidth = 8
 figheight = 6
 
 ## read the data
-expdat <- read.xlsx("../data/Experiment_table_EveWES.xlsx")
+expdat <- read.xlsx("../data/TableS3_Experiment_table_EveWES.xlsx")
 expdat$Date <- convertToDate(expdat$Date)
 expdat$Cross <- factor(expdat$Cross, levels = c("WxW", "WxS", "WxE", 
                                                 "SxS", "SxW", "SxE",
                                                 "ExE", "ExS", "ExW"))
+
+## make facet labels with male and female signs
+facet.labels <- c("♀W × ♂W", "♀W × ♂ S", "♀W × ♂E", 
+                  "♀S × ♂S", "♀S × ♂W", "♀S × ♂E",
+                  "♀E × ♂E", "♀E × ♂S", "♀E × ♂W")
+names(facet.labels) <- c("WxW", "WxS", "WxE", "SxS", "SxW", "SxE", "ExE", "ExS", "ExW")

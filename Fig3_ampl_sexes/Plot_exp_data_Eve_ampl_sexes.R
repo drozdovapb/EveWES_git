@@ -11,11 +11,6 @@ ggplot(expdat, aes(x = Date, col = Cross)) +
 ### amplexuses AND sexes for the presentation
 expdat$animalsInAmplexus <- expdat$Amplexuses*2 ## not used finally
 
-facet.labels <- c("♀W × ♂W", "♀W × ♂ S", "♀W × ♂E", 
-           "♀S × ♂S", "♀S × ♂W", "♀S × ♂E",
-           "♀E × ♂E", "♀E × ♂S", "♀E × ♂W")
-names(facet.labels) <- c("WxW", "WxS", "WxE", "SxS", "SxW", "SxE", "ExE", "ExS", "ExW")
-
 expdat$isE <- expdat$Cross %in% c("WxE", "SxE", "ExS", "ExW")
 
 #expdat$females <- expdat$females[c(T, F)]
@@ -26,10 +21,10 @@ maleshapes <- rep(c(rep("\U2642", 9), rep("", 9), rep("", 9)), 18)
 maleshapes[478:486] <- "\U2642"
 
 ggplot(expdat, aes(x = Date)) + 
-  geom_rect(data = expdat[1:9,], aes(fill=isE), xmin = -Inf, xmax = Inf, ymin = 0, ymax = 10, alpha=0.3) + 
+#  geom_rect(data = expdat[1:9,], aes(fill=isE), xmin = -Inf, xmax = Inf, ymin = 0, ymax = 10, alpha=0.3) + ## for pink background in E
   geom_line(aes(y = Amplexuses, col = Cross), size = 1, alpha = 0.75) +  ##linetype = Cross
   geom_point(aes(y = Amplexuses, col = Cross), shape = 21, size = 1, alpha = 0.85) + #fill = Cross,
-  geom_area(aes(y = Amplexuses), fill="grey90", alpha = 0.85) +
+  geom_area(aes(y = Amplexuses), fill="grey90", alpha = 1) +
   geom_point(aes(y=females), shape = femshapes, col="#FF33CC", size = 5, alpha = 1) + #fill = Cross #"\U2640"
   geom_line(aes(y=females), col="#FF33CC", alpha = 1) + #fill = Cross
   geom_point(aes(y=males), shape = maleshapes, col="#0066FF", size = 5, alpha = 1)  + #fill = Cross #"\U2642"
@@ -37,8 +32,9 @@ ggplot(expdat, aes(x = Date)) +
   expand_limits(y=c(0, 10)) + 
   mytheme() + 
   ylab("") + 
+  #geom_vline(xintercept=as.Date("2022-10-24")) + 
   facet_wrap(~Cross,   labeller = labeller(Cross=facet.labels))  +
-  theme(legend.position = 'none', strip.text = element_text(size=12, face="plain")) +#, strip.background = element_rect(fill="white")) + 
+  theme(legend.position = 'none', strip.text = element_text(size=12, face="plain")) #+#, strip.background = element_rect(fill="white")) + 
   scale_fill_manual(values = c("white", "pink"))
  #fill = Cross
 
