@@ -1,0 +1,179 @@
+IQ-TREE multicore version 2.0.7 for Linux 64-bit built Jan 21 2022
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    drozdovapb-HP-17-by1xxx (AVX2, FMA3, 11 GB RAM)
+Command: iqtree2 -s ../Gurkov2019_selection_18perspecies_trimmed_5prime_Lefe_noout.fa -m GTR+I+G --redo
+Seed:    672225 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Apr 17 21:38:38 2025
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file ../Gurkov2019_selection_18perspecies_trimmed_5prime_Lefe_noout.fa ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 54 sequences with 481 columns, 73 distinct patterns
+82 parsimony-informative, 11 singleton sites, 388 constant sites
+                                                                              Gap/Ambiguity  Composition  p-value
+   1  MK887363.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalsk_A1_EveS              0.00%    passed     85.26%
+   2  MK887364.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalsk_A2_EveS              0.00%    passed     85.26%
+   3  MK887365.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalsk_A5_EveS              0.00%    passed     89.40%
+   4  MK887366.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalsk_A7_EveS              0.00%    passed     79.40%
+   5  MK887367.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalsk_A10_EveS             0.00%    passed     85.26%
+   6  MK887368.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalsk_A12_EveS             0.00%    passed     85.26%
+   7  MK887443.1_Eulimnogammarus_verrucosus_voucher_Eve_Kultuk_L2_EveS                0.00%    passed     89.40%
+   8  MK887444.1_Eulimnogammarus_verrucosus_voucher_Eve_Kultuk_L3_EveS                0.00%    passed     91.84%
+   9  MK887445.1_Eulimnogammarus_verrucosus_voucher_Eve_Kultuk_L6_EveS                0.00%    passed     89.40%
+  10  MK887446.1_Eulimnogammarus_verrucosus_voucher_Eve_Kultuk_L7_EveS                0.00%    passed     85.26%
+  11  MK887447.1_Eulimnogammarus_verrucosus_voucher_Eve_Kultuk_L8_EveS                0.00%    passed     87.80%
+  12  MK887448.1_Eulimnogammarus_verrucosus_voucher_Eve_Kultuk_L9_EveS                0.00%    passed     85.26%
+  13  MK887511.1_Eulimnogammarus_verrucosus_voucher_Eve_Port_Baikal_Pb9_EveS          0.00%    passed     85.26%
+  14  MK887512.1_Eulimnogammarus_verrucosus_voucher_Eve_Port_Baikal_Pb14_EveS         0.00%    passed     85.26%
+  15  MK887513.1_Eulimnogammarus_verrucosus_voucher_Eve_Port_Baikal_Pb15_EveS         0.00%    passed     85.26%
+  16  MK887514.1_Eulimnogammarus_verrucosus_voucher_Eve_Port_Baikal_Pb16_EveS         0.00%    passed     95.86%
+  17  MK887515.1_Eulimnogammarus_verrucosus_voucher_Eve_Port_Baikal_Pb18_EveS         0.00%    passed     85.26%
+  18  MK887516.1_Eulimnogammarus_verrucosus_voucher_Eve_Port_Baikal_Pb19_EveS         0.00%    passed     85.26%
+  19  MK887559.1_Eulimnogammarus_verrucosus_voucher_Eve_UstBarguzin_UB1_EveE          0.00%    passed     91.40%
+  20  MK887560.1_Eulimnogammarus_verrucosus_voucher_Eve_UstBarguzin_UB2_EveE          0.00%    passed     83.89%
+  21  MK887561.1_Eulimnogammarus_verrucosus_voucher_Eve_UstBarguzin_UB3_EveE          0.00%    passed     91.40%
+  22  MK887562.1_Eulimnogammarus_verrucosus_voucher_Eve_UstBarguzin_UB4_EveE          0.00%    passed     87.08%
+  23  MK887563.1_Eulimnogammarus_verrucosus_voucher_Eve_UstBarguzin_UB5_EveE          0.00%    passed     94.68%
+  24  MK887564.1_Eulimnogammarus_verrucosus_voucher_Eve_UstBarguzin_UB6_EveE          0.00%    passed     90.32%
+  25  MK887427.1_Eulimnogammarus_verrucosus_voucher_Eve_Davsha_D1_EveE                0.00%    passed     99.29%
+  26  MK887428.1_Eulimnogammarus_verrucosus_voucher_Eve_Davsha_D2_EveE                0.00%    passed     91.40%
+  27  MK887429.1_Eulimnogammarus_verrucosus_voucher_Eve_Davsha_D3_EveE                0.00%    passed     98.67%
+  28  MK887430.1_Eulimnogammarus_verrucosus_voucher_Eve_Davsha_D4_EveE                0.00%    passed     94.68%
+  29  MK887431.1_Eulimnogammarus_verrucosus_voucher_Eve_Davsha_D5_EveE                0.00%    passed     96.96%
+  30  MK887432.1_Eulimnogammarus_verrucosus_voucher_Eve_Davsha_D6_EveE                0.00%    passed     93.69%
+  31  MK887545.1_Eulimnogammarus_verrucosus_voucher_Eve_Svyatoy_Nos_SN1_EveE          0.00%    passed     94.91%
+  32  MK887546.1_Eulimnogammarus_verrucosus_voucher_Eve_Svyatoy_Nos_SN2_EveE          0.00%    passed     90.32%
+  33  MK887547.1_Eulimnogammarus_verrucosus_voucher_Eve_Svyatoy_Nos_SN3_EveE          0.00%    passed     94.39%
+  34  MK887548.1_Eulimnogammarus_verrucosus_voucher_Eve_Svyatoy_Nos_SN4_EveE          0.00%    passed     96.08%
+  35  MK887549.1_Eulimnogammarus_verrucosus_voucher_Eve_Svyatoy_Nos_SN5_EveE          0.00%    passed     96.96%
+  36  MK887550.1_Eulimnogammarus_verrucosus_voucher_Eve_Svyatoy_Nos_SN6_EveE          0.00%    passed     96.66%
+  37  MK887455.1_Eulimnogammarus_verrucosus_voucher_Eve_Listvyanka_Y4_EveW            0.00%    passed     96.79%
+  38  MK887456.1_Eulimnogammarus_verrucosus_voucher_Eve_Listvyanka_Y9_EveW            0.00%    passed     96.64%
+  39  MK887457.1_Eulimnogammarus_verrucosus_voucher_Eve_Listvyanka_Y11_EveW           0.00%    passed     96.64%
+  40  MK887458.1_Eulimnogammarus_verrucosus_voucher_Eve_Listvyanka_Y12_EveW           0.00%    passed     96.64%
+  41  MK887459.1_Eulimnogammarus_verrucosus_voucher_Eve_Listvyanka_Y13_EveW           0.00%    passed     94.25%
+  42  MK887460.1_Eulimnogammarus_verrucosus_voucher_Eve_Listvyanka_Y14_EveW           0.00%    passed     95.10%
+  43  MK887416.1_Eulimnogammarus_verrucosus_voucher_Eve_Bolshoy_Ushkaniy_BU7_EveW     0.00%    passed     96.66%
+  44  MK887417.1_Eulimnogammarus_verrucosus_voucher_Eve_Bolshoy_Ushkaniy_BU8_EveW     0.00%    passed     96.66%
+  45  MK887418.1_Eulimnogammarus_verrucosus_voucher_Eve_Bolshoy_Ushkaniy_BU9_EveW     0.00%    passed     96.66%
+  46  MK887419.1_Eulimnogammarus_verrucosus_voucher_Eve_Bolshoy_Ushkaniy_BU10_EveW    0.00%    passed     96.66%
+  47  MK887420.1_Eulimnogammarus_verrucosus_voucher_Eve_Bolshoy_Ushkaniy_BU11_EveW    0.00%    passed     96.66%
+  48  MK887421.1_Eulimnogammarus_verrucosus_voucher_Eve_Bolshoy_Ushkaniy_BU12_EveW    0.00%    passed     95.85%
+  49  MK887374.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalskoe_B1_EveW            0.00%    passed     84.51%
+  50  MK887375.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalskoe_B2_EveW            0.00%    passed     88.73%
+  51  MK887378.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalskoe_B5_EveW            0.00%    passed     88.73%
+  52  MK887379.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalskoe_B6_EveW            0.00%    passed     87.45%
+  53  MK887380.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalskoe_B7_EveW            0.00%    passed     86.83%
+  54  MK887381.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalskoe_B8_EveW            0.00%    passed     87.45%
+****  TOTAL                                                                           0.00%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: MK887364.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalsk_A2_EveS is identical to MK887363.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalsk_A1_EveS but kept for subsequent analysis
+NOTE: MK887443.1_Eulimnogammarus_verrucosus_voucher_Eve_Kultuk_L2_EveS is identical to MK887365.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalsk_A5_EveS but kept for subsequent analysis
+NOTE: MK887458.1_Eulimnogammarus_verrucosus_voucher_Eve_Listvyanka_Y12_EveW is identical to MK887457.1_Eulimnogammarus_verrucosus_voucher_Eve_Listvyanka_Y11_EveW but kept for subsequent analysis
+NOTE: MK887417.1_Eulimnogammarus_verrucosus_voucher_Eve_Bolshoy_Ushkaniy_BU8_EveW is identical to MK887416.1_Eulimnogammarus_verrucosus_voucher_Eve_Bolshoy_Ushkaniy_BU7_EveW but kept for subsequent analysis
+NOTE: MK887378.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalskoe_B5_EveW is identical to MK887375.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalskoe_B2_EveW but kept for subsequent analysis
+NOTE: MK887381.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalskoe_B8_EveW is identical to MK887379.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalskoe_B6_EveW but kept for subsequent analysis
+NOTE: 13 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: MK887367.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalsk_A10_EveS (identical to MK887363.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalsk_A1_EveS) is ignored but added at the end
+NOTE: MK887368.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalsk_A12_EveS (identical to MK887363.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalsk_A1_EveS) is ignored but added at the end
+NOTE: MK887446.1_Eulimnogammarus_verrucosus_voucher_Eve_Kultuk_L7_EveS (identical to MK887363.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalsk_A1_EveS) is ignored but added at the end
+NOTE: MK887448.1_Eulimnogammarus_verrucosus_voucher_Eve_Kultuk_L9_EveS (identical to MK887363.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalsk_A1_EveS) is ignored but added at the end
+NOTE: MK887511.1_Eulimnogammarus_verrucosus_voucher_Eve_Port_Baikal_Pb9_EveS (identical to MK887363.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalsk_A1_EveS) is ignored but added at the end
+NOTE: MK887512.1_Eulimnogammarus_verrucosus_voucher_Eve_Port_Baikal_Pb14_EveS (identical to MK887363.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalsk_A1_EveS) is ignored but added at the end
+NOTE: MK887513.1_Eulimnogammarus_verrucosus_voucher_Eve_Port_Baikal_Pb15_EveS (identical to MK887363.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalsk_A1_EveS) is ignored but added at the end
+NOTE: MK887515.1_Eulimnogammarus_verrucosus_voucher_Eve_Port_Baikal_Pb18_EveS (identical to MK887363.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalsk_A1_EveS) is ignored but added at the end
+NOTE: MK887516.1_Eulimnogammarus_verrucosus_voucher_Eve_Port_Baikal_Pb19_EveS (identical to MK887363.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalsk_A1_EveS) is ignored but added at the end
+NOTE: MK887445.1_Eulimnogammarus_verrucosus_voucher_Eve_Kultuk_L6_EveS (identical to MK887365.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalsk_A5_EveS) is ignored but added at the end
+NOTE: MK887418.1_Eulimnogammarus_verrucosus_voucher_Eve_Bolshoy_Ushkaniy_BU9_EveW (identical to MK887416.1_Eulimnogammarus_verrucosus_voucher_Eve_Bolshoy_Ushkaniy_BU7_EveW) is ignored but added at the end
+NOTE: MK887419.1_Eulimnogammarus_verrucosus_voucher_Eve_Bolshoy_Ushkaniy_BU10_EveW (identical to MK887416.1_Eulimnogammarus_verrucosus_voucher_Eve_Bolshoy_Ushkaniy_BU7_EveW) is ignored but added at the end
+NOTE: MK887420.1_Eulimnogammarus_verrucosus_voucher_Eve_Bolshoy_Ushkaniy_BU11_EveW (identical to MK887416.1_Eulimnogammarus_verrucosus_voucher_Eve_Bolshoy_Ushkaniy_BU7_EveW) is ignored but added at the end
+Alignment was printed to ../Gurkov2019_selection_18perspecies_trimmed_5prime_Lefe_noout.fa.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to ../Gurkov2019_selection_18perspecies_trimmed_5prime_Lefe_noout.fa.uniqueseq.phy
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.002 seconds
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Thoroughly optimizing +I+G parameters from 10 start values...
+Init pinv, alpha: 0.000, 1.000 / Estimate: 0.000, 0.100 / LogL: -1412.262
+Init pinv, alpha: 0.090, 1.000 / Estimate: 0.089, 0.140 / LogL: -1412.199
+Init pinv, alpha: 0.179, 1.000 / Estimate: 0.178, 0.182 / LogL: -1412.090
+Init pinv, alpha: 0.269, 1.000 / Estimate: 0.267, 0.235 / LogL: -1412.010
+Init pinv, alpha: 0.359, 1.000 / Estimate: 0.357, 0.306 / LogL: -1411.885
+Init pinv, alpha: 0.448, 1.000 / Estimate: 0.448, 0.415 / LogL: -1411.792
+Init pinv, alpha: 0.538, 1.000 / Estimate: 0.538, 0.607 / LogL: -1411.686
+Init pinv, alpha: 0.627, 1.000 / Estimate: 0.626, 1.047 / LogL: -1411.587
+Init pinv, alpha: 0.717, 1.000 / Estimate: 0.705, 2.743 / LogL: -1411.650
+Init pinv, alpha: 0.807, 1.000 / Estimate: 0.726, 4.990 / LogL: -1411.846
+Optimal pinv,alpha: 0.626, 1.047 / LogL: -1411.587
+
+Parameters optimization took 0.437 sec
+Computing ML distances based on estimated model parameters... 0.012 sec
+Computing BIONJ tree...
+0.001 seconds
+Log-likelihood of BIONJ tree: -1412.425
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.181 second
+Computing log-likelihood of 98 initial trees ... 0.094 seconds
+Current best score: -1410.320
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -1408.263
+BETTER TREE FOUND at iteration 2: -1408.263
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 3: -1408.075
+Iteration 10 / LogL: -1409.497 / Time: 0h:0m:0s
+Iteration 20 / LogL: -1409.284 / Time: 0h:0m:1s
+Finish initializing candidate tree set (20)
+Current best tree score: -1408.075 / CPU time: 0.685
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -1408.280 / Time: 0h:0m:1s (0h:0m:3s left)
+Iteration 40 / LogL: -1408.279 / Time: 0h:0m:1s (0h:0m:2s left)
+Iteration 50 / LogL: -1409.258 / Time: 0h:0m:1s (0h:0m:2s left)
+Iteration 60 / LogL: -1408.079 / Time: 0h:0m:2s (0h:0m:1s left)
+Iteration 70 / LogL: -1408.078 / Time: 0h:0m:2s (0h:0m:1s left)
+Iteration 80 / LogL: -1408.263 / Time: 0h:0m:2s (0h:0m:0s left)
+Iteration 90 / LogL: -1408.080 / Time: 0h:0m:3s (0h:0m:0s left)
+Iteration 100 / LogL: -1411.241 / Time: 0h:0m:3s (0h:0m:0s left)
+TREE SEARCH COMPLETED AFTER 104 ITERATIONS / Time: 0h:0m:3s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -1408.075
+2. Current log-likelihood: -1408.049
+Optimal log-likelihood: -1408.043
+Rate parameters:  A-C: 2.13983  A-G: 20.86570  A-T: 1.50887  C-G: 0.00010  C-T: 11.34382  G-T: 1.00000
+Base frequencies:  A: 0.257  C: 0.188  G: 0.199  T: 0.356
+Proportion of invariable sites: 0.622
+Gamma shape alpha: 1.002
+Parameters optimization took 2 rounds (0.016 sec)
+BEST SCORE FOUND : -1408.043
+Total tree length: 0.420
+
+Total number of iterations: 104
+CPU time used for tree search: 2.732 sec (0h:0m:2s)
+Wall-clock time used for tree search: 2.900 sec (0h:0m:2s)
+Total CPU time used: 3.216 sec (0h:0m:3s)
+Total wall-clock time used: 3.395 sec (0h:0m:3s)
+
+Analysis results written to: 
+  IQ-TREE report:                ../Gurkov2019_selection_18perspecies_trimmed_5prime_Lefe_noout.fa.iqtree
+  Maximum-likelihood tree:       ../Gurkov2019_selection_18perspecies_trimmed_5prime_Lefe_noout.fa.treefile
+  Likelihood distances:          ../Gurkov2019_selection_18perspecies_trimmed_5prime_Lefe_noout.fa.mldist
+  Screen log file:               ../Gurkov2019_selection_18perspecies_trimmed_5prime_Lefe_noout.fa.log
+
+Date and Time: Thu Apr 17 21:38:42 2025

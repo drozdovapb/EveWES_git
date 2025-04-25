@@ -34,3 +34,6 @@ base_map
 ggsave("map.png", first_map, width = 7, height=6, device = "png")
 ggsave("map_col.png", second_map, width = 7, height=6, device = "png")
 ggsave("map_col.svg", second_map, width = 7, height=6, device = "svg")
+
+
+str(c(0.1, 2))

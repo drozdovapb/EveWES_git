@@ -1,0 +1,177 @@
+IQ-TREE 2.0.7 built Jan 21 2022
+
+Input file name: ../Gurkov2019_selection_18perspecies_trimmed_5prime_Lefe_noout.fa
+Type of analysis: tree reconstruction
+Random seed number: 672225
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 54 sequences with 481 nucleotide sites
+Number of constant sites: 388 (= 80.6653% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 388 (= 80.6653% of all sites)
+Number of parsimony informative sites: 82
+Number of distinct site patterns: 73
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+I+G4
+
+Rate parameter R:
+
+  A-C: 2.1398
+  A-G: 20.8657
+  A-T: 1.5089
+  C-G: 0.0001
+  C-T: 11.3438
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2571
+  pi(C) = 0.1878
+  pi(G) = 0.1986
+  pi(T) = 0.3564
+
+Rate matrix Q:
+
+  A    -1.189   0.09401    0.9694    0.1258
+  C    0.1287    -1.074  4.646e-06    0.9458
+  G     1.255  4.393e-06    -1.338   0.08337
+  T   0.09076    0.4984   0.04646   -0.6356
+
+Model of rate heterogeneity: Invar+Gamma with 4 categories
+Proportion of invariable sites: 0.6225
+Gamma shape alpha: 1.002
+
+ Category  Relative_rate  Proportion
+  0         0              0.6225
+  1         0.3637         0.09438
+  2         1.264          0.09438
+  3         2.649          0.09438
+  4         6.318          0.09438
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -1408.0428 (s.e. 70.2783)
+Unconstrained log-likelihood (without tree): -1140.5438
+Number of free parameters (#branches + #model parameters): 89
+Akaike information criterion (AIC) score: 2994.0856
+Corrected Akaike information criterion (AICc) score: 3035.0574
+Bayesian information criterion (BIC) score: 3365.7378
+
+Total tree length (sum of branch lengths): 0.4198
+Sum of internal branch lengths: 0.3324 (79.1814% of tree length)
+
+WARNING: 23 near-zero internal branches (<0.0021) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'MK887363.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalsk_A1_EveS' is drawn at root
+
++**MK887363.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalsk_A1_EveS
+|
++**MK887364.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalsk_A2_EveS
+|
+|           +**MK887365.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalsk_A5_EveS
+|        +**|
+|        |  +**MK887443.1_Eulimnogammarus_verrucosus_voucher_Eve_Kultuk_L2_EveS
+|     +**|
+|     |  |  +--MK887444.1_Eulimnogammarus_verrucosus_voucher_Eve_Kultuk_L3_EveS
+|     |  +**|
+|     |     +--MK887447.1_Eulimnogammarus_verrucosus_voucher_Eve_Kultuk_L8_EveS
+|  +--|
+|  |  |  +--MK887514.1_Eulimnogammarus_verrucosus_voucher_Eve_Port_Baikal_Pb16_EveS
+|  |  +**|
+|  |     |                                                                               +--MK887559.1_Eulimnogammarus_verrucosus_voucher_Eve_UstBarguzin_UB1_EveE
+|  |     |                                                                            +**|
+|  |     |                                                                            |  |  +--MK887428.1_Eulimnogammarus_verrucosus_voucher_Eve_Davsha_D2_EveE
+|  |     |                                                                            |  +**|
+|  |     |                                                                            |     |  +**MK887430.1_Eulimnogammarus_verrucosus_voucher_Eve_Davsha_D4_EveE
+|  |     |                                                                            |     +--|
+|  |     |                                                                            |        +--MK887431.1_Eulimnogammarus_verrucosus_voucher_Eve_Davsha_D5_EveE
+|  |     |                                                                         +**|
+|  |     |                                                                         |  +--MK887549.1_Eulimnogammarus_verrucosus_voucher_Eve_Svyatoy_Nos_SN5_EveE
+|  |     |                                                                      +**|
+|  |     |                                                                      |  +**MK887563.1_Eulimnogammarus_verrucosus_voucher_Eve_UstBarguzin_UB5_EveE
+|  |     |                                                                   +**|
+|  |     |                                                                   |  |     +--MK887560.1_Eulimnogammarus_verrucosus_voucher_Eve_UstBarguzin_UB2_EveE
+|  |     |                                                                   |  |  +--|
+|  |     |                                                                   |  |  |  +--MK887545.1_Eulimnogammarus_verrucosus_voucher_Eve_Svyatoy_Nos_SN1_EveE
+|  |     |                                                                   |  +**|
+|  |     |                                                                   |     +--MK887562.1_Eulimnogammarus_verrucosus_voucher_Eve_UstBarguzin_UB4_EveE
+|  |     |                                                                +--|
+|  |     |                                                                |  |  +--MK887561.1_Eulimnogammarus_verrucosus_voucher_Eve_UstBarguzin_UB3_EveE
+|  |     |                                                                |  +--|
+|  |     |                                                                |     +--MK887547.1_Eulimnogammarus_verrucosus_voucher_Eve_Svyatoy_Nos_SN3_EveE
+|  |     |                                                             +**|
+|  |     |                                                             |  +--MK887546.1_Eulimnogammarus_verrucosus_voucher_Eve_Svyatoy_Nos_SN2_EveE
+|  |     |                                                          +**|
+|  |     |                                                          |  +**MK887432.1_Eulimnogammarus_verrucosus_voucher_Eve_Davsha_D6_EveE
+|  |     |                                                       +**|
+|  |     |                                                       |  +--MK887550.1_Eulimnogammarus_verrucosus_voucher_Eve_Svyatoy_Nos_SN6_EveE
+|  |     |                                                    +--|
+|  |     |                                                    |  +--MK887548.1_Eulimnogammarus_verrucosus_voucher_Eve_Svyatoy_Nos_SN4_EveE
+|  |     |                                             +------|
+|  |     |                                             |      +**MK887564.1_Eulimnogammarus_verrucosus_voucher_Eve_UstBarguzin_UB6_EveE
+|  |     |                                          +--|
+|  |     |                                          |  +--MK887427.1_Eulimnogammarus_verrucosus_voucher_Eve_Davsha_D1_EveE
+|  |     |                     +--------------------|
+|  |     |                     |                    +**MK887429.1_Eulimnogammarus_verrucosus_voucher_Eve_Davsha_D3_EveE
+|  |     +---------------------|
+|  |                           |                                   +--MK887455.1_Eulimnogammarus_verrucosus_voucher_Eve_Listvyanka_Y4_EveW
+|  |                           |                                +**|
+|  |                           |                                |  |        +**MK887416.1_Eulimnogammarus_verrucosus_voucher_Eve_Bolshoy_Ushkaniy_BU7_EveW
+|  |                           |                                |  |     +**|
+|  |                           |                                |  |     |  +**MK887417.1_Eulimnogammarus_verrucosus_voucher_Eve_Bolshoy_Ushkaniy_BU8_EveW
+|  |                           |                                |  |  +**|
+|  |                           |                                |  |  |  +--MK887421.1_Eulimnogammarus_verrucosus_voucher_Eve_Bolshoy_Ushkaniy_BU12_EveW
+|  |                           |                                |  +--|
+|  |                           |                                |     |        +--MK887374.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalskoe_B1_EveW
+|  |                           |                                |     |     +**|
+|  |                           |                                |     |     |  |  +**MK887379.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalskoe_B6_EveW
+|  |                           |                                |     |     |  +--|
+|  |                           |                                |     |     |     +**MK887381.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalskoe_B8_EveW
+|  |                           |                                |     |  +**|
+|  |                           |                                |     |  |  |  +**MK887375.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalskoe_B2_EveW
+|  |                           |                                |     |  |  +**|
+|  |                           |                                |     |  |     +**MK887378.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalskoe_B5_EveW
+|  |                           |                                |     +--|
+|  |                           |                                |        +--MK887380.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalskoe_B7_EveW
+|  |                           |                             +**|
+|  |                           |                             |  |  +**MK887457.1_Eulimnogammarus_verrucosus_voucher_Eve_Listvyanka_Y11_EveW
+|  |                           |                             |  +**|
+|  |                           |                             |     +**MK887458.1_Eulimnogammarus_verrucosus_voucher_Eve_Listvyanka_Y12_EveW
+|  |                           |                          +**|
+|  |                           |                          |  +--MK887460.1_Eulimnogammarus_verrucosus_voucher_Eve_Listvyanka_Y14_EveW
+|  |                           |                       +--|
+|  |                           |                       |  +--MK887459.1_Eulimnogammarus_verrucosus_voucher_Eve_Listvyanka_Y13_EveW
+|  |                           +-----------------------|
+|  |                                                   +**MK887456.1_Eulimnogammarus_verrucosus_voucher_Eve_Listvyanka_Y9_EveW
++**|
+   +--MK887366.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalsk_A7_EveS
+
+Tree in newick format:
+
+(MK887363.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalsk_A1_EveS:0.0000010090,MK887364.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalsk_A2_EveS:0.0000010090,((((MK887365.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalsk_A5_EveS:0.0000010090,MK887443.1_Eulimnogammarus_verrucosus_voucher_Eve_Kultuk_L2_EveS:0.0000010090):0.0000010090,(MK887444.1_Eulimnogammarus_verrucosus_voucher_Eve_Kultuk_L3_EveS:0.0045151074,MK887447.1_Eulimnogammarus_verrucosus_voucher_Eve_Kultuk_L8_EveS:0.0022201560):0.0000010090):0.0000010090,(MK887514.1_Eulimnogammarus_verrucosus_voucher_Eve_Port_Baikal_Pb16_EveS:0.0073040950,(((((((((((((MK887559.1_Eulimnogammarus_verrucosus_voucher_Eve_UstBarguzin_UB1_EveE:0.0021335381,(MK887428.1_Eulimnogammarus_verrucosus_voucher_Eve_Davsha_D2_EveE:0.0021313582,(MK887430.1_Eulimnogammarus_verrucosus_voucher_Eve_Davsha_D4_EveE:0.0000010090,MK887431.1_Eulimnogammarus_verrucosus_voucher_Eve_Davsha_D5_EveE:0.0021453691):0.0043126611):0.0000010090):0.0000010090,MK887549.1_Eulimnogammarus_verrucosus_voucher_Eve_Svyatoy_Nos_SN5_EveE:0.0021397615):0.0000010090,MK887563.1_Eulimnogammarus_verrucosus_voucher_Eve_UstBarguzin_UB5_EveE:0.0000010090):0.0000010090,((MK887560.1_Eulimnogammarus_verrucosus_voucher_Eve_UstBarguzin_UB2_EveE:0.0065361421,MK887545.1_Eulimnogammarus_verrucosus_voucher_Eve_Svyatoy_Nos_SN1_EveE:0.0043441566):0.0021834264,MK887562.1_Eulimnogammarus_verrucosus_voucher_Eve_UstBarguzin_UB4_EveE:0.0042940623):0.0000010090):0.0000010090,(MK887561.1_Eulimnogammarus_verrucosus_voucher_Eve_UstBarguzin_UB3_EveE:0.0043960453,MK887547.1_Eulimnogammarus_verrucosus_voucher_Eve_Svyatoy_Nos_SN3_EveE:0.0021767391):0.0021532998):0.0021345877,MK887546.1_Eulimnogammarus_verrucosus_voucher_Eve_Svyatoy_Nos_SN2_EveE:0.0066014893):0.0000010090,MK887432.1_Eulimnogammarus_verrucosus_voucher_Eve_Davsha_D6_EveE:0.0000010090):0.0000010090,MK887550.1_Eulimnogammarus_verrucosus_voucher_Eve_Svyatoy_Nos_SN6_EveE:0.0021362067):0.0000010090,MK887548.1_Eulimnogammarus_verrucosus_voucher_Eve_Svyatoy_Nos_SN4_EveE:0.0065144037):0.0021277595,MK887564.1_Eulimnogammarus_verrucosus_voucher_Eve_UstBarguzin_UB6_EveE:0.0000020480):0.0294549861,MK887427.1_Eulimnogammarus_verrucosus_voucher_Eve_Davsha_D1_EveE:0.0043916104):0.0069390460,MK887429.1_Eulimnogammarus_verrucosus_voucher_Eve_Davsha_D3_EveE:0.0000023334):0.0800506012,(((((MK887455.1_Eulimnogammarus_verrucosus_voucher_Eve_Listvyanka_Y4_EveW:0.0021186203,(((MK887416.1_Eulimnogammarus_verrucosus_voucher_Eve_Bolshoy_Ushkaniy_BU7_EveW:0.0000010090,MK887417.1_Eulimnogammarus_verrucosus_voucher_Eve_Bolshoy_Ushkaniy_BU8_EveW:0.0000010090):0.0000010090,MK887421.1_Eulimnogammarus_verrucosus_voucher_Eve_Bolshoy_Ushkaniy_BU12_EveW:0.0021072156):0.0020489799,(((MK887374.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalskoe_B1_EveW:0.0020832163,(MK887379.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalskoe_B6_EveW:0.0000010090,MK887381.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalskoe_B8_EveW:0.0000010090):0.0063907698):0.0000010090,(MK887375.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalskoe_B2_EveW:0.0000010090,MK887378.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalskoe_B5_EveW:0.0000010090):0.0000010090):0.0000010090,MK887380.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalskoe_B7_EveW:0.0020899645):0.0065074128):0.0022002499):0.0000010090,(MK887457.1_Eulimnogammarus_verrucosus_voucher_Eve_Listvyanka_Y11_EveW:0.0000010090,MK887458.1_Eulimnogammarus_verrucosus_voucher_Eve_Listvyanka_Y12_EveW:0.0000010090):0.0000010090):0.0000010090,MK887460.1_Eulimnogammarus_verrucosus_voucher_Eve_Listvyanka_Y14_EveW:0.0021177549):0.0000010090,MK887459.1_Eulimnogammarus_verrucosus_voucher_Eve_Listvyanka_Y13_EveW:0.0042572003):0.0042627793,MK887456.1_Eulimnogammarus_verrucosus_voucher_Eve_Listvyanka_Y9_EveW:0.0000024008):0.0911730346):0.0858452194):0.0018855604):0.0091418334,MK887366.1_Eulimnogammarus_verrucosus_voucher_Eve_Baikalsk_A7_EveS:0.0022349115):0.0000010090);
+
+TIME STAMP
+----------
+
+Date and time: Thu Apr 17 21:38:42 2025
+Total CPU time used: 3.2155 seconds (0h:0m:3s)
+Total wall-clock time used: 3.39615 seconds (0h:0m:3s)
+
