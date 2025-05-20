@@ -35,7 +35,7 @@ ggsave("eggs.png", width=figwidth, height=figheight, device=png, dpi = 300)
 
 ###### 
 
-eggdat <- read.xlsx("../data/Lost_egg_stages.xlsx")
+eggdat <- read.xlsx("../data/TableS4_Lost_egg_stages.xlsx")
 eggdat$Date <- convertToDate(eggdat$Date)
 eggdat$Cross <- factor(eggdat$Cross, levels = c("WxW", "WxS", "WxE", 
                                                 "SxS", "SxW", "SxE",

@@ -1,6 +1,10 @@
 library(ggplot2)
 library(openxlsx)
 library(ggpubr)
+library(ggbeeswarm)
+library(tidyr)
+library(dplyr)
+library(rstatix)
 
 source("../Fig3_ampl_sexes/settings.R")
 
@@ -9,29 +13,29 @@ lengths <- lengths[complete.cases(lengths$Length), ]
 
 table(lengths$Species, lengths$Sex)
 
-ggplot(lengths, aes(x=Species, y=Length, fill=Species, col=Sex)) +
-  geom_boxplot(outlier.color = 'NA') + 
-  geom_point(position = position_jitterdodge(jitter.width = 0.1), aes(shape=Sex, col=Sex), size=2, alpha=0.75) + 
+lengths$Sex <- as.factor(lengths$Sex)
+
+ggplot(lengths, aes(x=Species, y=Length)) +
+#  geom_violin(aes(fill=Species, col=Sex, linetype=Sex), linewidth = 1) + #, col=Sex
+  geom_boxplot(outlier.color = 'NA', aes(fill=Species, col=Sex)) + #, col=Sex
+  geom_beeswarm(aes(shape=Sex, fill=Species, col=Sex), dodge.width = 0.8, method='swarm', size=2, cex=2) + 
+#  geom_point(position = position_jitterdodge(jitter.width = 0.1), 
+#             aes(shape=Sex, fill=Sex), size=5, alpha=0.95) + #fill=Species
   scale_x_discrete(limits=rev) + 
   expand_limits(y=0) + 
   scale_fill_manual(values = c(E, S, W), 
                     guide = guide_legend(override.aes = list(shape = c(NA, NA, NA)))) + 
-  scale_color_manual(values = c("grey30", "grey33")) + 
-#  scale_shape_manual(values = c("♀", "♂")) +
-#  scale_shape_manual(values = c("\U25B2", "\U25BC")) +
-#  scale_shape_manual(values = c(2, 6)) +
-#  scale_shape_manual(values = c(21, 24)) +
-  scale_shape_manual(values = c(19, 15)) + 
-  theme_bw(base_size = 14) -> p1
+  scale_color_manual(values = c("grey60", "grey13")) + 
+  scale_linetype_manual(values = c("solid", "dotdash")) + 
+  scale_shape_manual(values = c(21, 22),
+                     guide = guide_legend(override.aes = list(fill = "white"))) + 
+  theme_bw(base_size = 13) -> p1
 
 p1
 
 pairwise.wilcox.test(g = lengths$Sex, x = lengths$Length)
 pairwise.wilcox.test(g = lengths$Sex, x = lengths$Length)
 
-library(tidyr)
-library(dplyr)
-library(rstatix)
 lengths %>% #filter(!is.na(Length)) %>%
   group_by(Species) %>% 
   wilcox_test(Length ~ Sex) %>% 
@@ -62,7 +66,8 @@ p2 + stat_pvalue_manual(stat.test2, label = 'p.adj.signif', tip.length = 0.02, #
   ylab("Body length, mm") + 
   scale_y_continuous(expand = expansion(mult = c(0.05, 0.1)))
 
-ggsave("FigS2_lengths.png", device=png, width=8, height=4)
+ggsave("FigS2_lengths.png", device=png, width=7, height=3.5)
+ggsave("FigS2_lengths.svg", device=svg, width=7, height=3)
 
 ########
 ## Length vs. body angle
