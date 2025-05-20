@@ -13,3 +13,5 @@ tried mrbayes
 the in both cases Figtree for nex => newick tree
 newick tree into patristic
 in both cases less than I expected and less than mldist
+
+repeated with iq-tree and patristic distances from there (Copilas-Ciocianu et al., 2022 did exactly this)
