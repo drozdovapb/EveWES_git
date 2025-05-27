@@ -45,17 +45,17 @@ plot_distances <- function(csv_filename, already_triangular=TRUE) {
 #patrdist <- plot_distances("mb_patristic/patristic_matrix.ed.csv", already_triangular = FALSE) + 
 #  ggtitle("Patristic Bayes") + geom_hline(yintercept = 0.16, linetype = "dotted")
 ## iqtree
-patrdist_ml <- plot_distances("iqtree/iqtree_matrix.ed.csv", already_triangular = FALSE) + 
+patrdist_ml <- plot_distances("COI_divergence/iqtree/iqtree_matrix.ed.csv", already_triangular = FALSE) + 
   ggtitle("Patristic ML") + geom_hline(yintercept = 0.16, linetype = "dotted")
 
 ## p-distance (uncorrected pairwise; identified with MEGA)
-pdist <- plot_distances("mega/pdist.csv") + ggtitle("p-distance")
+pdist <- plot_distances("COI_divergence/mega/pdist.csv") + ggtitle("p-distance")
 ## K2P distance (Kimura 2-parameter; calculated with MEGA)
-k2pdist <- plot_distances("mega/K2P.csv") + ggtitle("K2P")
+k2pdist <- plot_distances("COI_divergence/mega/K2P.csv") + ggtitle("K2P")
 
 ## just in case pairwise (GTR??) distance as returned by IQ-TREE in the .mldist file
 ## mldist
-disttable <- read.table("./iqtree/Gurkov2019_selection_18perspecies_trimmed_5prime_Lefe_noout.fa.mldist", skip = 1)
+disttable <- read.table("COI_divergence//iqtree/Gurkov2019_selection_18perspecies_trimmed_5prime_Lefe_noout.fa.mldist", skip = 1)
 
 ## mldist file from IQ-TREE is a bit funny.
 ## The easiest way to work with this 'table' 
