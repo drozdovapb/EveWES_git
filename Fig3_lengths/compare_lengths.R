@@ -1,12 +1,7 @@
-library(ggplot2)
-library(openxlsx)
-library(ggpubr)
-library(ggbeeswarm)
-library(tidyr)
-library(dplyr)
-library(rstatix)
+library(ggbeeswarm) ## for geom_beeswarm
+library(rstatix) ## for add_xy_position
 
-source("../Fig3_ampl_sexes/settings.R")
+source("../Fig5_ampl_sexes/settings.R")
 
 lengths <- read.xlsx("../data/TableS1_Lengths.xlsx")
 lengths <- lengths[complete.cases(lengths$Length), ]

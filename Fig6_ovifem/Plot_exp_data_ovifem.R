@@ -1,4 +1,4 @@
-source("../Fig3_ampl_sexes/settings.R")
+source("../Fig5_ampl_sexes/settings.R")
 
 ggplot(expdat, aes(x = Date, col = Cross, y = `SUM.females.w/eggs`)) + 
   #  geom_line(aes(y = `Fallen.out.eggs`), size = 1, alpha = 0.75) +  ##linetype = Cross
