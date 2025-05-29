@@ -1,7 +1,8 @@
 ./Fig1_intro/obs
 ./Fig1_intro/.Rhistory
 ./Fig2_mate_choice/.Rhistory
-./Fig3_ampl_sexes/.Rhistory
+./Fig2_mate_choice/.Rhistory
+./*/.Rhistory
 ./Fig3_ampl_sexes/versions
 ./Fig4_ovifem/.Rhistory
 ./Fig5_juv/.Rhistory
