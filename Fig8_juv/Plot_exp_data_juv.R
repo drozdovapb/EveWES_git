@@ -1,4 +1,4 @@
-source("../Fig3_ampl_sexes/settings.R")
+source("../Fig5_ampl_sexes/settings.R")
 
 
 ## plot everything including zeroes

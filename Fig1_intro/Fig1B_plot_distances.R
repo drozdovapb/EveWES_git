@@ -55,13 +55,13 @@ k2pdist <- plot_distances("COI_divergence/mega/K2P.csv") + ggtitle("K2P")
 
 ## just in case pairwise (GTR??) distance as returned by IQ-TREE in the .mldist file
 ## mldist
-disttable <- read.table("COI_divergence//iqtree/Gurkov2019_selection_18perspecies_trimmed_5prime_Lefe_noout.fa.mldist", skip = 1)
+disttable <- read.table("COI_divergence/iqtree/Gurkov2019_selection_18perspecies_trimmed_5prime_Lefe_noout.fa.mldist", skip = 1)
 
 ## mldist file from IQ-TREE is a bit funny.
 ## The easiest way to work with this 'table' 
 names(disttable)[-1] <- disttable[,1]
-write.csv(disttable, "iqtree/Gurkov2019_selection_18perspecies_trimmed_5prime_Lefe_noout.fa.mldist.csv", row.names = FALSE)
-mldist <- plot_distances("iqtree/Gurkov2019_selection_18perspecies_trimmed_5prime_Lefe_noout.fa.mldist.csv")
+write.csv(disttable, "COI_divergence/iqtree/Gurkov2019_selection_18perspecies_trimmed_5prime_Lefe_noout.fa.mldist.csv", row.names = FALSE)
+mldist <- plot_distances("COI_divergence/iqtree/Gurkov2019_selection_18perspecies_trimmed_5prime_Lefe_noout.fa.mldist.csv")
 
 #ggarrange(patrdist, pdist, k2pdist, nrow = 1)
 #ggsave("nucl_divergence.svg", width=6, height=2.5, device = svg)

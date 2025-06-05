@@ -4,6 +4,9 @@ library(sf)
 library(ggplot2)
 library(openxlsx)
 
+## imprort settings, mostly to set colors
+source("../Fig5_ampl_sexes/settings.R")
+
 #https://stackoverflow.com/questions/77244364/is-ggmap-sf-still-plotting-point-in-wrong-place
 
 bb <- c(left = 103.5, bottom = 51.4, right = 105.6, top = 52.3)
